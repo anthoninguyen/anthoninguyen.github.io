@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Personal website for An Nguyen (Anthony): research, edge AI, sensor fusion, localization, publications, and contact information."
+    >
+    <title>An Nguyen (Anthony)</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5a13.38 13.38 0 0 0-8 0C6 2 5 2 5 2a7.84 7.84 0 0 0 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
+        <rect x="2" y="9" width="4" height="12"></rect>
+        <circle cx="4" cy="4" r="2"></circle>
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+        <path d="m3 7 9 6 9-6"></path>
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.2 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.35 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.84.57 2.8.7A2 2 0 0 1 22 16.92z"></path>
+      </symbol>
+      <symbol id="icon-map-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </symbol>
+      <symbol id="icon-file-text" viewBox="0 0 24 24">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+        <path d="M14 2v6h6"></path>
+        <path d="M16 13H8"></path>
+        <path d="M16 17H8"></path>
+        <path d="M10 9H8"></path>
+      </symbol>
+    </svg>
+
+    <header class="site-header" data-header>
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#about" aria-label="An Nguyen (Anthony) home">An Nguyen (Anthony)</a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" id="primary-menu">
+          <span class="nav-indicator" aria-hidden="true"></span>
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" data-theme-toggle>
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0 4a1 1 0 0 1-1-1v-1a1 1 0 1 1 2 0v1a1 1 0 0 1-1 1Zm0-18a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1a1 1 0 0 1-1 1Zm10 8a1 1 0 0 1-1 1h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1ZM5 12a1 1 0 0 1-1 1H3a1 1 0 1 1 0-2h1a1 1 0 0 1 1 1Zm13.07 7.49a1 1 0 0 1-1.41 0l-.7-.7a1 1 0 1 1 1.41-1.42l.7.71a1 1 0 0 1 0 1.41ZM7.34 8.04a1 1 0 0 1-1.41 0l-.7-.71A1 1 0 1 1 6.64 5.9l.7.71a1 1 0 0 1 0 1.42Zm10.73-2.12a1 1 0 0 1 0 1.41l-.7.71a1 1 0 0 1-1.41-1.42l.7-.7a1 1 0 0 1 1.41 0ZM7.34 17.38a1 1 0 0 1 0 1.42l-.7.7a1 1 0 0 1-1.41-1.41l.7-.71a1 1 0 0 1 1.41 0Z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-band" id="about" aria-labelledby="hero-title">
+        <div class="hero-grid container">
+          <aside class="profile-panel" aria-label="Profile summary">
+            <img
+              class="profile-photo"
+              src="assets/profile.png"
+              width="320"
+              height="320"
+              alt="Portrait of An Nguyen (Anthony)"
+            >
+            <div class="profile-meta">
+              <p class="eyebrow">School of Computing, KAIST</p>
+              <h1 id="hero-title">An Nguyen (Anthony)</h1>
+              <p class="role">M.S. Student in Computer Science</p>
+            </div>
+            <ul class="contact-list" aria-label="Contact links">
+              <li>
+                <a class="platform-link" href="mailto:anvan.nguyen203@gmail.com">
+                  <svg class="brand-icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+                  <span>anvan.nguyen203@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a class="platform-link" href="https://www.linkedin.com/in/anthony342/">
+                  <svg class="brand-icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+                  <span>LinkedIn</span>
+                </a>
+              </li>
+              <li>
+                <a class="platform-link" href="https://github.com/AnVaz342">
+                  <svg class="brand-icon" aria-hidden="true"><use href="#icon-github"></use></svg>
+                  <span>GitHub</span>
+                </a>
+              </li>
+              <li>
+                <a class="platform-link" href="mailto:anvan.nguyen203@gmail.com?subject=CV%20Request">
+                  <svg class="brand-icon" aria-hidden="true"><use href="#icon-file-text"></use></svg>
+                  <span>CV / Resume (available upon request)</span>
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+          <div class="hero-content">
+            <h2>About Me</h2>
+            <p>
+              An Nguyen (Anthony) is currently pursuing an M.S. in Computer Science at
+              the School of Computing, Korea Advanced Institute of Science and
+              Technology, South Korea. He received his B.Eng. in Control Engineering
+              and Automation with honors from Hanoi University of Science and
+              Technology, Vietnam. His research interests include on-device AI, sensor
+              fusion, Internet of Things, and robust localization.
+            </p>
+            <p>
+              I am curious about how intelligent systems move from ideas into real-world
+              devices. I enjoy exploring the space between algorithms, sensors, and
+              hardware, where small engineering details can shape whether a system works
+              reliably outside the lab.
+            </p>
+            <dl class="quick-facts" aria-label="Quick facts">
+              <div>
+                <dt>Affiliation</dt>
+                <dd>School of Computing, KAIST</dd>
+              </div>
+              <div>
+                <dt>Research</dt>
+                <dd>
+                  <span>On-Device AI</span>
+                  <span>Sensor Fusion</span>
+                  <span>Internet of Things</span>
+                  <span>Indoor Navigation</span>
+                </dd>
+              </div>
+              <div>
+                <dt>Education</dt>
+                <dd class="education-list">
+                  <span>
+                    <strong>Bachelor of Engineering</strong>
+                    <small>Hanoi University of Science and Technology</small>
+                  </span>
+                  <span>
+                    <strong>Master of Science</strong>
+                    <small>Korea Advanced Institute of Science and Technology</small>
+                  </span>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="news" aria-labelledby="news-title">
+        <div class="container split-heading">
+          <div>
+            <h2 id="news-title">Selected News</h2>
+          </div>
+        </div>
+        <div class="container timeline" aria-label="Selected news timeline">
+          <article class="timeline-item">
+            <time datetime="2026-02">02 / 2026</time>
+            <div class="news-content">
+              <p>
+                <strong>Joined KAIST</strong>, School of Computing, as an M.S. student
+                and Research Assistant at ISI Lab.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time datetime="2025-09">09 / 2025</time>
+            <div class="news-content">
+              <p>
+                <strong>Graduated from HUST with honors</strong>, top 2.6% of the
+                Class of 2025, School of Electrical and Electronic Engineering.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time datetime="2025-08">08 / 2025</time>
+            <div class="news-content">
+              <p>
+                <strong>Joined Viettel Semi, Viettel Group</strong> as an NPU Engineer.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time datetime="2025-07">07 / 2025</time>
+            <div class="news-content">
+              <p>
+                <strong>Joined University of Wyoming</strong>, College of Engineering
+                and Physical Sciences, for a funded summer research internship.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time datetime="2024-11">11 / 2024</time>
+            <div class="news-content">
+              <p>
+                <strong>Joined Elcom Vietnam</strong> as an Embedded Intern through the
+                E-Gen Talent Program.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band" id="publications" aria-labelledby="publications-title">
+        <div class="container split-heading">
+          <div>
+            <h2 id="publications-title">Publications</h2>
+          </div>
+        </div>
+
+        <div class="container">
+          <article class="publication-card">
+            <figure class="publication-figure">
+              <img
+                class="publication-image"
+                src="assets/ipin-2026-positioning-overview.png"
+                alt="System overview for LoRa-based indoor-outdoor positioning in emergency response"
+              >
+            </figure>
+
+            <div class="publication-content">
+              <p class="publication-type">Conference Paper &middot; IPIN 2026</p>
+              <h3>Edge-Centric Indoor-Outdoor Positioning Using LoRa Communication For Emergency Response</h3>
+              <p class="publication-authors">
+                Van-Tuan Nguyen, Tuan-Anh Mac, <strong>Van-An Nguyen</strong>, Anh-Van Vu, and Dongsoo Han
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="awards" aria-labelledby="awards-title">
+        <div class="container split-heading">
+          <div>
+            <h2 id="awards-title">Awards & Scholarships</h2>
+          </div>
+        </div>
+
+        <div class="container award-list" aria-label="Awards and scholarships">
+          <article class="award-item">
+            <div class="award-meta">
+              <time datetime="2025-12">December 2025</time>
+              <span>Daejeon, South Korea</span>
+            </div>
+            <div>
+              <h3>KAIST Scholarship</h3>
+              <p>Full tuition scholarship with monthly stipend for master's study at KAIST.</p>
+            </div>
+          </article>
+
+          <article class="award-item">
+            <div class="award-meta">
+              <time datetime="2025-06">June 2025</time>
+              <span>Wyoming, United States</span>
+            </div>
+            <div>
+              <h3>Funded Summer Research Internship, University of Wyoming</h3>
+              <p>USD 3,000 stipend with housing and meals provided.</p>
+            </div>
+          </article>
+
+          <article class="award-item">
+            <div class="award-meta">
+              <time datetime="2025">2022 &ndash; 2025</time>
+              <span>Hanoi, Vietnam</span>
+            </div>
+            <div>
+              <h3>HUST Scholarship for Academic Excellence, Type A</h3>
+              <p>Awarded in 4 of 7 semesters; ranked 1st in two semesters.</p>
+            </div>
+          </article>
+
+          <article class="award-item">
+            <div class="award-meta">
+              <time datetime="2025">2022 &ndash; 2025</time>
+              <span>Vietnam</span>
+            </div>
+            <div>
+              <h3>Odon Vallet, Nitori, and EVN Scholarships for Academic Excellence</h3>
+              <p>Awarded for outstanding academic performance.</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section-band contact-band" id="contact" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div>
+            <h2 id="contact-title">Contact</h2>
+            <p>
+              Please feel free to reach out for research collaborations, academic
+              inquiries, or professional opportunities.
+            </p>
+          </div>
+          <address class="contact-box" aria-label="Contact details">
+            <section class="contact-group" aria-labelledby="contact-email-title">
+              <h3 id="contact-email-title">
+                <svg class="contact-icon" aria-hidden="true"><use href="#icon-mail"></use></svg>
+                <span>Email</span>
+              </h3>
+              <dl class="contact-pairs">
+                <div>
+                  <dt>Personal</dt>
+                  <dd><a href="mailto:anvan.nguyen203@gmail.com">anvan.nguyen203@gmail.com</a></dd>
+                </div>
+                <div>
+                  <dt>KAIST</dt>
+                  <dd><a href="mailto:annguyen@kaist.ac.kr">annguyen@kaist.ac.kr</a></dd>
+                </div>
+              </dl>
+            </section>
+
+            <section class="contact-group" aria-labelledby="contact-phone-title">
+              <h3 id="contact-phone-title">
+                <svg class="contact-icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+                <span>Phone</span>
+              </h3>
+              <dl class="contact-pairs">
+                <div>
+                  <dt>Korea</dt>
+                  <dd><a href="tel:+821057858214">+82 10-5785-8214</a></dd>
+                </div>
+                <div>
+                  <dt>Vietnam</dt>
+                  <dd><a href="tel:+84363257370">+84 363-257-370</a></dd>
+                </div>
+              </dl>
+            </section>
+
+            <section class="contact-group contact-office" aria-labelledby="contact-office-title">
+              <h3 id="contact-office-title">
+                <svg class="contact-icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+                <span>Office</span>
+              </h3>
+              <p>
+                Room 723, N1 Kim Beang-Ho &amp; Kim Sam-Youl ITC Building<br>
+                KAIST, Daejeon, South Korea
+              </p>
+            </section>
+
+            <section class="contact-group" aria-labelledby="contact-linkedin-title">
+              <h3 id="contact-linkedin-title">
+                <svg class="contact-icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>
+                <span>LinkedIn</span>
+              </h3>
+              <a href="https://www.linkedin.com/in/anthony342/">linkedin.com/in/anthony342</a>
+            </section>
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span data-year></span> An Nguyen (Anthony).</p>
+        <a href="#about">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
