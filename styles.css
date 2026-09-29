@@ -617,6 +617,11 @@ button {
   padding: 6px 10px;
 }
 
+.publication-list {
+  display: grid;
+  gap: 20px;
+}
+
 .publication-card {
   display: grid;
   grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
