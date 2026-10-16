@@ -1,6 +1,6 @@
 # An Nguyen (Anthony) Personal Website
 
-Draft personal website for GitHub Pages, inspired by academic homepages and organized around About, News, Publications, Awards, and Contact.
+Personal website for GitHub Pages, inspired by academic homepages and organized around About, News, Publications, Ongoing Projects, Awards, and Contact.
 
 ## Files
 
@@ -9,6 +9,7 @@ Draft personal website for GitHub Pages, inspired by academic homepages and orga
 - `script.js` contains the mobile navigation, theme toggle, active section state, and footer year.
 - `assets/profile.png` is the current profile photo.
 - `assets/ipin-2026-positioning-overview.png` is the current publication figure.
+- `assets/kailos-npu-sensor-array-board.png` is the KAILOS project photo.
 
 ## Fill-in Checklist
 

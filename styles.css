@@ -547,7 +547,7 @@ button {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -563,8 +563,35 @@ button {
 .project-card {
   display: grid;
   grid-template-rows: auto 1fr;
-  gap: 22px;
-  padding: 22px;
+  overflow: hidden;
+}
+
+.project-media {
+  aspect-ratio: 16 / 9;
+  min-width: 0;
+  margin: 0;
+  background: var(--surface-soft);
+}
+
+.project-media img,
+.project-media iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.project-media img {
+  object-fit: contain;
+}
+
+.project-content {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  min-width: 0;
+  padding: 20px;
+  overflow-wrap: anywhere;
 }
 
 .project-mark {
@@ -583,6 +610,11 @@ button {
   margin: 0 0 10px;
   font-size: 1.14rem;
   line-height: 1.25;
+}
+
+.project-content h3 {
+  margin: 0;
+  line-height: 1.4;
 }
 
 .project-card p,
