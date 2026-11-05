@@ -385,8 +385,8 @@ button {
 }
 
 .quick-facts {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
   gap: 14px;
   margin: 30px 0 0;
 }
@@ -394,7 +394,6 @@ button {
 .quick-facts div {
   display: grid;
   align-content: start;
-  flex: 1 1 220px;
   min-width: 0;
   padding: 16px;
   border: 1px solid var(--line);
@@ -415,8 +414,8 @@ button {
   font-size: 0.94rem;
 }
 
-.quick-facts dd > span {
-  white-space: nowrap;
+.quick-facts .education-list {
+  gap: 12px;
 }
 
 .education-list > span {
@@ -544,54 +543,10 @@ button {
   margin: 0;
 }
 
-.research-band {
-  border-block: 1px solid var(--line);
-  background: var(--surface);
-}
-
-.research-band .split-heading {
-  margin-bottom: 16px;
-}
-
-.research-intro {
-  max-width: 72ch;
-  margin-bottom: 30px;
-  color: var(--muted);
-}
-
-.research-intro p {
-  margin: 0;
-}
-
-.research-intro .research-status {
-  margin-top: 10px;
-}
-
-.research-status strong {
-  color: var(--accent-strong);
-}
-
-.research-videos {
+.project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 26px;
-}
-
-.research-video {
-  display: grid;
-  gap: 10px;
-  min-width: 0;
-}
-
-.research-video h3 {
-  margin: 0;
-  font-size: 1.14rem;
-  line-height: 1.4;
-}
-
-.research-video .project-media {
-  overflow: hidden;
-  border-radius: var(--radius);
+  gap: 18px;
 }
 
 .project-card,
@@ -605,8 +560,7 @@ button {
 
 .project-card {
   display: grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
-  align-items: center;
+  grid-template-rows: auto 1fr;
   overflow: hidden;
 }
 
@@ -629,10 +583,6 @@ button {
   object-fit: contain;
 }
 
-.project-card .project-media {
-  aspect-ratio: 1054 / 509;
-}
-
 .project-content {
   display: grid;
   align-content: start;
@@ -640,6 +590,12 @@ button {
   min-width: 0;
   padding: 20px;
   overflow-wrap: anywhere;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
 }
 
 .project-mark {
@@ -976,15 +932,13 @@ button {
     font-size: 2.15rem;
   }
 
-  .project-card,
   .experience-grid,
   .publication-card {
     grid-template-columns: 1fr;
   }
 
   .quick-facts {
-    display: grid;
-    grid-template-columns: 1fr;
+    max-width: 640px;
   }
 }
 
@@ -1027,7 +981,8 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .research-videos {
+  .project-grid,
+  .quick-facts {
     grid-template-columns: 1fr;
   }
 

@@ -1,6 +1,6 @@
 # An Nguyen (Anthony) Personal Website
 
-Personal website for GitHub Pages, inspired by academic homepages and organized around About, Research, News, Publications, Ongoing Projects, Awards, and Contact.
+Personal website for GitHub Pages, inspired by academic homepages and organized around About, News, Ongoing Projects, Publications, Awards, and Contact.
 
 ## Files
 
