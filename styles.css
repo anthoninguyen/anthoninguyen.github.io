@@ -559,14 +559,15 @@ button {
 
 .project-card {
   display: grid;
-  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
+  gap: 18px;
+  padding: 22px;
   overflow: hidden;
 }
 
 .project-card.project-card-featured {
   display: block;
-  padding: 22px;
   border-color: color-mix(in srgb, var(--accent), var(--line) 65%);
 }
 
@@ -620,6 +621,7 @@ button {
   aspect-ratio: 1054 / 509;
 }
 
+.project-card > .project-media,
 .project-video .project-media {
   overflow: hidden;
   border-radius: var(--radius);
@@ -630,7 +632,6 @@ button {
   align-content: start;
   gap: 12px;
   min-width: 0;
-  padding: 20px;
   overflow-wrap: anywhere;
 }
 
@@ -654,6 +655,7 @@ button {
 
 .project-content h3 {
   margin: 0;
+  font-size: 1.35rem;
   line-height: 1.4;
 }
 
@@ -1023,7 +1025,7 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .project-card.project-card-featured {
+  .project-card {
     padding: 16px;
   }
 
